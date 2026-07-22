@@ -81,7 +81,7 @@ function Detail() {
           </Reveal>
           <Reveal className="md:col-span-8" delay={120}>
             <ul className="divide-y divide-border border-y border-border">
-              {project.scope[lang].map((s, i) => (
+              {project.scope[lang].map((s: string, i: number) => (
                 <li key={i} className="py-5 flex items-baseline gap-6">
                   <span className="text-accent text-xs tracking-widest">{String(i + 1).padStart(2, "0")}</span>
                   <span className="text-lg">{s}</span>
@@ -98,7 +98,7 @@ function Detail() {
             <div className="eyebrow">{t("Gallery", "معرض الصور")}</div>
           </Reveal>
           <div className="mt-10 grid gap-4 md:grid-cols-2">
-            {project.gallery.map((src, i) => (
+            {project.gallery.map((src: string, i: number) => (
               <Reveal key={i} delay={i * 80}>
                 <button onClick={() => setLightbox(src)} className="block w-full aspect-[4/3] overflow-hidden bg-muted">
                   <img src={src} alt="" loading="lazy" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
