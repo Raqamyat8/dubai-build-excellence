@@ -1,19 +1,17 @@
-import hero1 from "@/assets/IMG_8840.jpeg.asset.json";
-import hero2 from "@/assets/IMG_8862.png.asset.json";
-import p1 from "@/assets/IMG_8839.jpeg.asset.json";
-import p2 from "@/assets/IMG_8840.jpeg.asset.json";
-import p3 from "@/assets/IMG_8841.jpeg.asset.json";
-import p4 from "@/assets/IMG_8845.jpeg.asset.json";
-import p5 from "@/assets/IMG_8850.jpeg.asset.json";
-import p6 from "@/assets/IMG_8861.png.asset.json";
-import p7 from "@/assets/IMG_8862.png.asset.json";
-import p8 from "@/assets/IMG_8864.png.asset.json";
-import p9 from "@/assets/IMG_8865.png.asset.json";
-import logo from "@/assets/IMG_8859.jpeg.asset.json";
+const p1 = { url: "/IMG_8839.jpeg" };
+const p2 = { url: "/IMG_8840.jpeg" };
+const p3 = { url: "/IMG_8841.jpeg" };
+const p4 = { url: "/IMG_8845.jpeg" };
+const p5 = { url: "/IMG_8850.jpeg" };
+const p6 = { url: "/IMG_8861.png" };
+const p7 = { url: "/IMG_8862.png" };
+const p8 = { url: "/IMG_8864.png" };
+const p9 = { url: "/IMG_8865.png" };
+const logo = { url: "/IMG_8859.jpeg" };
 
 export const IMG = {
-  hero: hero1.url,
-  heroAlt: hero2.url,
+  hero: p2.url,
+  heroAlt: p7.url,
   logo: logo.url,
 };
 
